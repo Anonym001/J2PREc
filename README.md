@@ -1,7 +1,7 @@
 # J2PRec
 ## Introduction 
 
-Joint Product-Participant Recommendation (J2PRec) is a new framework for group-buying (GB) recommendation, which recommends both candidate products and participants for maximizing the success rate of a GB. J2PRec first encodes the various relations in GB for learning enhanced user and product embeddings, and then jointly learns the product and participant recommendation tasks under a probabilistic framework to maximize the GB likelihood.
+Joint Product-Participant Recommendation (J2PRec) is a new framework for group-buying (GB) recommendation, which recommends both candidate products and participants for maximizing the success rate of a GB. J2PRec first encodes the various relations in GB for learning enhanced user and product embeddings. It then jointly learns the product and participant recommendation tasks under a probabilistic framework to maximize the GB likelihood.
 
 ## Environment Requirement
 
@@ -17,22 +17,22 @@ Joint Product-Participant Recommendation (J2PRec) is a new framework for group-b
 
 + social_relation.txt
    + Introduction: social relations among users. 
-   + Format:(<user_id1> \t <user_id2>), denoting there is a social relation between the two users.
+   + Format: (<user_id1> \t <user_id2>), denoting there is a social relation between the two users.
 + train_id.txt: 
    + Introduction: GB interactions for training. 
-   + Format:(<initiator_id> \t <product_id> \t <participant_id1> \t ... \t <participant_idK>), denoting the initiator purchase the target product with the set of participants. 
+   + Format: (<initiator_id> \t <product_id> \t <participant_id1> \t ... \t <participant_idK>), denoting the initiator purchases the target product with the set of participants. 
 + tune.txt: 
    + Introduction: GB interactions for validation. 
-   + Format:(<initiator_id> \t <product_id> \t <participant_id1> \t ... \t <participant_idK>)
+   + Format: (<initiator_id> \t <product_id> \t <participant_id1> \t ... \t <participant_idK>)
 + test.txt:
    + Introduction: GB interactions for testing. 
-   + Format:(<initiator_id> \t <product_id> \t <participant_id1> \t ... \t <participant_idK>)
+   + Format: (<initiator_id> \t <product_id> \t <participant_id1> \t ... \t <participant_idK>)
 + test.negative.txt: 
    + Introduction: the sampled negative products for each test user. 
-   + Format:(<user_id> \t <product_id1> <product_id2> ... <productz_id1000>)
+   + Format: (<user_id> \t <product_id1> <product_id2> ... <product_id1000>)
 + train.txt:
    + Introduction: the user and all her interacted products in training set. 
-   + Format:(<user_id> <product_id1> <product_id2> ... <productz_idM>)
+   + Format: (<user_id> <product_id1> <product_id2> ... <product_idM>)
 + Due to the file size limit, we provide an illustration example on brightkite dataset. The beibei and gowalla datasets can be downloaded here: https://drive.google.com/drive/folders/1PUUP7mA2xR-suP108jreXyOT-EcjnXBd?usp=sharing. 
    
 ## Running Command 
@@ -49,9 +49,10 @@ Joint Product-Participant Recommendation (J2PRec) is a new framework for group-b
 
     You need to specify serveral parameters for training and testing:
    
-    + dataset: beibei / brightkite / Yelp
+    + dataset: beibei / brightkite / gowalla
     + regs: regularization weight 
-    + layer_size: the number of layers and embedding size 
+    + layer_size: the number of layers 
+    + embed_size: embedding size 
     + lr: learning rate
     + batch_size : the size of batch for training
     + epoch : the epoch for training 
