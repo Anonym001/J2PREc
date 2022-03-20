@@ -1,7 +1,7 @@
 # J2PREc
 ## Introduction 
 
-Joint Product-Participant Recommendation is a new framework for group-buying (GB) recommendation. J2PRec fully exploits the various GB relations. 
+Joint Product-Participant Recommendation (J2PRec) is a new framework for group-buying (GB) recommendation, which recommends both candidate products and participants for maximizing the success rate of a GB. Specifically, J2PRec first designs a relational graph embedding module, which effectively encodes the various relations in GB for learning enhanced user and product embeddings. It then jointly learns the product and participant recommendation tasks under a probabilistic framework to maximize the GB likelihood.
 
 ## Environment Requirement
 
