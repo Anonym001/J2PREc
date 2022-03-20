@@ -15,13 +15,10 @@ Joint Product-Participant Recommendation (J2PRec) is a new framework for group-b
 
 ## Datasets
 
-+ beibei & brightkite & gowalla
-
-   
-   + social_relation.txt
-         + Introduction: social relations among users. 
-         + Format:
-               (<user_id1>\t<user_id2>), denoting there is a social relation between the two users.
++ social_relation.txt
+      + Introduction: social relations among users. 
+      + Format:
+        (<user_id1>\t<user_id2>), denoting there is a social relation between the two users.
    + train_id.txt: it contains data for training. Each line is a user with a list of her interacted items. 
    + tune.txt: it contains data for validation. Each line is a user with her validation set. 
    + test.txt: it contains data for testing. Each line is a user with her test item.
