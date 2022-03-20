@@ -16,14 +16,14 @@ Joint Product-Participant Recommendation (J2PRec) is a new framework for group-b
 ## Datasets
 
 + social_relation.txt
-      + Introduction: social relations among users. 
-      + Format:
-        (<user_id1>\t<user_id2>), denoting there is a social relation between the two users.
-   + train_id.txt: it contains data for training. Each line is a user with a list of her interacted items. 
-   + tune.txt: it contains data for validation. Each line is a user with her validation set. 
-   + test.txt: it contains data for testing. Each line is a user with her test item.
-   + test.negative.txt: 
-   + We provide an illustration example on brightkite dataset. The beibei and gowalla datasets can be downloaded here: https://drive.google.com/drive/folders/1PUUP7mA2xR-suP108jreXyOT-EcjnXBd?usp=sharing. 
+   + Introduction: social relations among users. 
+   + Format:(<user_id1>\t<user_id2>), denoting there is a social relation between the two users.
++ train_id.txt: it contains data for training. Each line is a user with a list of her interacted items. 
++ tune.txt: it contains data for validation. Each line is a user with her validation set. 
++ test.txt: it contains data for testing. Each line is a user with her test item.
++ test.negative.txt: 
++ train.txt:
++ Due to the file size limit, we provide an illustration example on brightkite dataset. The beibei and gowalla datasets can be downloaded here: https://drive.google.com/drive/folders/1PUUP7mA2xR-suP108jreXyOT-EcjnXBd?usp=sharing. 
    
 ## Running Command 
 
